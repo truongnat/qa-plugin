@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{REPORT_TITLE}}</title>
+        <link rel="stylesheet" href="./assets/report.css" />
+    </head>
+    <body>
+        <div class="app-shell">
+            <aside class="sidebar">
+                <div class="brand">
+                    <div class="brand-mark">QA</div>
+                    <div>
+                        <div class="brand-title">QA Investigation</div>
+                        <div class="brand-subtitle">{{INVESTIGATION_MODE}}</div>
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <a href="#summary">Summary</a>
+                    <a href="#metadata">Metadata</a>
+                    <a href="#system">System</a>
+                    <a href="#routes">Pages & Routes</a>
+                    <a href="#flows">User Flows</a>
+                    <a href="#forms">Forms</a>
+                    <a href="#data">Data Screens</a>
+                    <a href="#auth">Auth</a>
+                    <a href="#api">API</a>
+                    <a href="#risks">Risks</a>
+                    <a href="#coverage">Coverage</a>
+                    <a href="#unknowns">Unknowns</a>
+                    <a href="#next">Next Actions</a>
+                </nav>
+            </aside>
+
+            <main class="content">
+                <header class="hero">
+                    <div>
+                        <p class="eyebrow">Investigation Report</p>
+                        <h1>{{REPORT_TITLE}}</h1>
+                        <p class="hero-desc">{{REPORT_DESCRIPTION}}</p>
+                    </div>
+
+                    <div class="hero-card">
+                        <span class="status-dot"></span>
+                        <div>
+                            <strong>{{REPORT_STATUS}}</strong>
+                            <span>{{GENERATED_AT}}</span>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="kpi-grid">
+                    <div class="kpi">
+                        <span>Pages</span>
+                        <strong>{{PAGES_COUNT}}</strong>
+                    </div>
+                    <div class="kpi">
+                        <span>Flows</span>
+                        <strong>{{FLOWS_COUNT}}</strong>
+                    </div>
+                    <div class="kpi">
+                        <span>Risks</span>
+                        <strong>{{RISKS_COUNT}}</strong>
+                    </div>
+                    <div class="kpi">
+                        <span>Unknowns</span>
+                        <strong>{{UNKNOWNS_COUNT}}</strong>
+                    </div>
+                </section>
+
+                <section id="summary" class="section">
+                    <div class="section-head">
+                        <p>01</p>
+                        <h2>Executive Summary</h2>
+                    </div>
+                    <div class="card prose">{{EXECUTIVE_SUMMARY}}</div>
+                </section>
+
+                <section id="metadata" class="section">
+                    <div class="section-head">
+                        <p>02</p>
+                        <h2>Investigation Metadata</h2>
+                    </div>
+                    <div class="card">
+                        <div class="meta-grid">{{METADATA_ITEMS}}</div>
+                    </div>
+                </section>
+
+                <section id="system" class="section">
+                    <div class="section-head">
+                        <p>03</p>
+                        <h2>System Overview</h2>
+                    </div>
+                    <div class="card prose">{{SYSTEM_OVERVIEW}}</div>
+                </section>
+
+                <section id="routes" class="section">
+                    <div class="section-head">
+                        <p>04</p>
+                        <h2>Discovered Pages & Routes</h2>
+                    </div>
+                    <div class="card">{{PAGES_ROUTES}}</div>
+                </section>
+
+                <section id="flows" class="section">
+                    <div class="section-head">
+                        <p>05</p>
+                        <h2>Main User Flows</h2>
+                    </div>
+                    <div class="card">{{USER_FLOWS}}</div>
+                </section>
+
+                <section id="forms" class="section">
+                    <div class="section-head">
+                        <p>06</p>
+                        <h2>Forms & Interactions</h2>
+                    </div>
+                    <div class="card">{{FORMS_INTERACTIONS}}</div>
+                </section>
+
+                <section id="data" class="section">
+                    <div class="section-head">
+                        <p>07</p>
+                        <h2>Data Screens</h2>
+                    </div>
+                    <div class="card">{{DATA_SCREENS}}</div>
+                </section>
+
+                <section id="auth" class="section">
+                    <div class="section-head">
+                        <p>08</p>
+                        <h2>Authentication & Permissions</h2>
+                    </div>
+                    <div class="card">{{AUTH_PERMISSIONS}}</div>
+                </section>
+
+                <section id="api" class="section">
+                    <div class="section-head">
+                        <p>09</p>
+                        <h2>API & Network Observations</h2>
+                    </div>
+                    <div class="card">{{API_NETWORK}}</div>
+                </section>
+
+                <section id="risks" class="section">
+                    <div class="section-head">
+                        <p>10</p>
+                        <h2>QA Risk Assessment</h2>
+                    </div>
+                    <div class="card">{{RISK_ASSESSMENT}}</div>
+                </section>
+
+                <section id="coverage" class="section">
+                    <div class="section-head">
+                        <p>11</p>
+                        <h2>Suggested Test Coverage</h2>
+                    </div>
+                    <div class="card">{{TEST_COVERAGE}}</div>
+                </section>
+
+                <section id="unknowns" class="section">
+                    <div class="section-head">
+                        <p>12</p>
+                        <h2>Unknowns & Blockers</h2>
+                    </div>
+                    <div class="card">{{UNKNOWNS_BLOCKERS}}</div>
+                </section>
+
+                <section id="next" class="section">
+                    <div class="section-head">
+                        <p>13</p>
+                        <h2>Recommended Next Actions</h2>
+                    </div>
+                    <div class="card">{{NEXT_ACTIONS}}</div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

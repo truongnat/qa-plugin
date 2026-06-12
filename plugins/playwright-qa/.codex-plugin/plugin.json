@@ -1,0 +1,24 @@
+{
+  "name": "playwright-qa",
+  "version": "0.1.0+codex.20260612101043",
+  "description": "QA investigation reports with optional, consent-based Playwright and FFmpeg setup.",
+  "author": {
+    "name": "Local QA Tools"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Playwright QA",
+    "shortDescription": "Investigate apps with optional Playwright and FFmpeg tooling.",
+    "longDescription": "Investigate websites and source repositories, generate previewable QA reports, and request consent before installing optional Playwright or FFmpeg tooling.",
+    "developerName": "Local QA Tools",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "@investigate Investigate this URL and generate a QA preview report."
+    ],
+    "brandColor": "#6366F1"
+  }
+}
